@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<p style='text-align: justify;'> I am a lifelong learner who enjoys what I do. I was born in a remote village in Telangana, India's beautiful state known as "South of North and North of South" I earned a Bachelor of Engineering in Computer Science and Engineering (CSE) from <a href="https://vce.ac.in" target="_blank">Vasavi College of Engineering(VCE)</a>, Hyderabad and my masters from <a href="https://jntuh.ac.in" target="_blank">Jawaharlal Nehru Technological University</a>, Hyderabad.</p>
+<p style='text-align: justify;'> I was born in a remote village in Telangana, India's beautiful state known as "South of North and North of South" I earned a Bachelor of Engineering in Computer Science and Engineering (CSE) from <a href="https://vce.ac.in" target="_blank">Vasavi College of Engineering(VCE)</a>, Hyderabad and my masters from <a href="https://jntuh.ac.in" target="_blank">Jawaharlal Nehru Technological University</a>, Hyderabad.</p>
 
 <p style='text-align: justify;'> Having 10+ years of an education domain experience in software development using Microsoft .Net and ML/DL technologies with good exposure to the full software development.</p>
 
@@ -24,7 +24,7 @@ redirect_from:
 
 <ul>
  <li style='color: #808080;'><b>Title:</b> <i>Rap-Densenet Framwork for Network Attack Detection and Classification</i></li> 
-  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.worldscientific.com/toc/jikm/0/0' target='_blank'>[Journal of Information & Knowledge Management]</a>  &nbsp;<b>Status:</b> [Accepted] </p>
+  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.worldscientific.com/toc/jikm/0/0' target='_blank'>[Journal of Information & Knowledge Management]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1142/S0219649224500333'  target='_blank'>[https://doi.org/10.1142/S0219649224500333]</a></p>
   
    <li style='color: #808080;'><b>Title:</b> <i>A model for multi-attack classification to improve intrusion detection performance using deep learning approaches</i></li> 
   <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.sciencedirect.com/journal/measurement-sensors' target='_blank'>[Measurement: Sensors]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1016/j.measen.2023.100924'  target='_blank'>[https://doi.org/10.1016/j.measen.2023.100924]</a> </p>
@@ -39,6 +39,7 @@ redirect_from:
 <h3>Scientific Services</h3>
 <hr/>
 <ul>  
+   <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/neural-networks' target='_blank'>Neural Networks</a> <a href='https://iarunsilivery.github.io/files/Certificate_NN_Recognised.pdf' target='_blank'> [Certificate] </a> </li>
   <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/computer-standards-and-interfaces' target='_blank'>Computer Standards & Interfaces</a> <a href='https://iarunsilivery.github.io/files/Certificate_CSI_Recognised.pdf' target='_blank'> [Certificate] </a> </li>
   <li> Acted as external reviewer for <a href='https://www.keaipublishing.com/en/journals/international-journal-of-intelligent-networks' target='_blank'>International Journal of Intelligent Networks (IJIN)</a> <a href='https://iarunsilivery.github.io/files/Certificate_IJIN_Recognised.pdf' target='_blank'> [Certificate] </a></li>
 </ul>  
