@@ -9,7 +9,7 @@ For my latest publications please visit <a href='https://scholar.google.com/cita
 <hr/>
 <ul>
  <li style='color: #808080;'><b>Title:</b> <i>Rap-Densenet Framwork for Network Attack Detection and Classification</i></li> 
-  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.worldscientific.com/toc/jikm/0/0' target='_blank'>[Journal of Information & Knowledge Management]</a>  &nbsp;<b>Status:</b> [Accepted] </p>
+  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.worldscientific.com/toc/jikm/0/0' target='_blank'>[Journal of Information & Knowledge Management]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1142/S0219649224500333'  target='_blank'>[https://doi.org/10.1142/S0219649224500333]</a> </p>
   
    <li style='color: #808080;'><b>Title:</b> <i>A model for multi-attack classification to improve intrusion detection performance using deep learning approaches</i></li> 
   <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.sciencedirect.com/journal/measurement-sensors' target='_blank'>[Measurement: Sensors]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1016/j.measen.2023.100924'  target='_blank'>[https://doi.org/10.1016/j.measen.2023.100924]</a> </p>
