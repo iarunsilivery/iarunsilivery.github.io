@@ -12,7 +12,7 @@ redirect_from:
 
 <p style='text-align: justify;'> Having 10+ years of an education domain experience in software development using Microsoft .Net and ML/DL technologies with good exposure to the full software development.</p>
 
-<p style='text-align: justify;'> I earned my Ph.D. in Computer Science and Engineering, under the guidance of <a href="https://vce.ac.in/Faculty_Details.cshtml?id=1280" target="_blank">Prof. Ram Mohan Rao</a> at <a href="https://www.osmania.ac.in" target="_blank">Osmania University</a>, Hyderabad. During my doctoral studies, I investigated the field of Anomaly Intrusion Detection in Network based using Deep Learning Techniques.</p>
+<p style='text-align: justify;'> I earned my Ph.D. in Computer Science and Engineering, under the guidance of <a href="https://vce.ac.in/Faculty_Details.cshtml?id=1280" target="_blank">Prof. Ram Mohan Rao</a> at <a href="https://www.osmania.ac.in" target="_blank">Osmania University</a>, Hyderabad. During my doctoral studies, I investigated the field of Anomaly Intrusion Detection in Network-based systems using Deep Learning Techniques.</p>
 
 <p style='text-align: justify;'> I am broadly interested in system security and network security where I work on building secure systems, developing practical detection systems for democratizing and accelerating smooth transactions.</p>
 
