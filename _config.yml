@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Arun Silivery"
+title                    : "Dr. Arun Silivery"
 title_separator          : "-"
-name                     : &name "Arun Silivery"
-description              : &description "I am Arun silivery, Research Scholar at University College of Engineeering, Osmania University"
+name                     : &name "Dr. Arun Silivery"
+description              : &description "I am Dr. Arun silivery, from Osmania University"
 url                      : https://iarunsilivery.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Arun Silivery"
+  name             : "Dr. Arun Silivery"
   avatar           : "profile.png"
-  bio              : "Research Scholar @ Osmania University"
+  bio              : "Osmania University"
   location         : "Hyderabad, India"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
