@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Arun Silivery"
+title: "Dr. Arun Silivery"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
