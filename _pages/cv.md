@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Computer Science, Osmania University,Hyderabad, in 2024 
-* M.Tech., Jawaharlal Nehru Technological University, Hyderabad, First Class with Distinction in 2016
-* B.E. in Osmania University, First Class in 2011
+* Ph.D. in Computer Science and Engineering from Osmania University, Hyderabad, in 2024.
+* M.Tech. in Computer Science and Engineering from Jawaharlal Nehru Technological University, Hyderabad, with First Class with Distinction in 2016.
+* B.E. in Computer Science and Engineering from Osmania University, graduating with First Class in 2011.
 
 Work experience
 ======
