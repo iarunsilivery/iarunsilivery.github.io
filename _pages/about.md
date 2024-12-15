@@ -47,10 +47,10 @@ redirect_from:
 <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/neural-networks' target='_blank'>Neural Networks</a> <a href='drive.google.com/file/d/1c2v_OYpOTCHb8a-e54m2WwdHew3OJXdP/view' target='_blank'> [Certificate] </a> </li>
    
    <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/measurement-sensors' target='_blank'>Measurement: Sensors</a> <a href='https://drive.google.com/file/d/1yNsCtpraulPgvmRfvN7avUYMPwaLxLqp/view' target='_blank'> [Certificate] </a> </li>
-  
-  <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/computer-standards-and-interfaces' target='_blank'>Computer Standards & Interfaces</a> <a href='https://iarunsilivery.github.io/files/Certificate_CSI_Recognised.pdf' target='_blank'> [Certificate] </a> </li>
 
    <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/expert-systems-with-applications' target='_blank'>Expert Systems with Applications</a> <a href='https://drive.google.com/file/d/1Bf9U4RQXSS8OK7HZ4ehQoO2VrpNlIcEn/view' target='_blank'> [Certificate] </a> </li>
+   
+  <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/computer-standards-and-interfaces' target='_blank'>Computer Standards & Interfaces</a> <a href='https://iarunsilivery.github.io/files/Certificate_CSI_Recognised.pdf' target='_blank'> [Certificate] </a> </li>  
  
     <li> Acted as external reviewer for <a href='https://www.keaipublishing.com/en/journals/international-journal-of-intelligent-networks' target='_blank'>International Journal of Intelligent Networks</a> <a href='https://iarunsilivery.github.io/files/Certificate_IJIN_Recognised.pdf' target='_blank'> [Certificate] </a></li>
 
