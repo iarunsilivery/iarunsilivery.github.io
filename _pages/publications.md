@@ -8,8 +8,8 @@ For my latest publications please visit <a href='https://scholar.google.com/cita
 <b>Journals</b>
 <hr/>
 <ul>
- <li style='color: #808080;'><b>Title:</b> <i>DPFEN: An Effective Hybrid Framework For Intrusion Detection In IoT Based Networks</i></li> 
-  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Status:</b> Communicated</p>
+ <li style='color: #808080;'><b>Title:</b> <i>Dual-path feature extraction based hybrid intrusion detection in IoT networks</i></li> 
+  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.sciencedirect.com/science/article/abs/pii/S0045790624008747' target='_blank'>[ Computers and Electrical Engineering/Elsevier]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1016/j.compeleceng.2024.109949'  target='_blank'>[https://doi.org/10.1016/j.compeleceng.2024.109949]</a> </p>  
  
  <li style='color: #808080;'><b>Title:</b> <i>Rap-Densenet Framwork for Network Attack Detection and Classification</i></li> 
   <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.worldscientific.com/toc/jikm/0/0' target='_blank'>[Journal of Information & Knowledge Management]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1142/S0219649224500333'  target='_blank'>[https://doi.org/10.1142/S0219649224500333]</a> </p>
