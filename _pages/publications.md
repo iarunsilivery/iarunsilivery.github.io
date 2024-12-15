@@ -9,19 +9,19 @@ For my latest publications please visit <a href='https://scholar.google.com/cita
 <hr/>
 <ul>
  <li style='color: #808080;'><b>Title:</b> <i>Dual-path feature extraction based hybrid intrusion detection in IoT networks</i></li> 
-  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.sciencedirect.com/science/article/abs/pii/S0045790624008747' target='_blank'>[ Computers and Electrical Engineering/Elsevier]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1016/j.compeleceng.2024.109949'  target='_blank'>[https://doi.org/10.1016/j.compeleceng.2024.109949]</a> </p>  
+  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.sciencedirect.com/science/article/abs/pii/S0045790624008747' target='_blank'>[ Computers and Electrical Engineering/Elsevier]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1016/j.compeleceng.2024.109949'  target='_blank'>[https://doi.org/10.1016/j.compeleceng.2024.109949]</a> <br/> <b>Indexed:</b> Sources Citation Index Expanded (SCIE), Scopus</p>  
  
  <li style='color: #808080;'><b>Title:</b> <i>Rap-Densenet Framwork for Network Attack Detection and Classification</i></li> 
-  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.worldscientific.com/toc/jikm/0/0' target='_blank'>[Journal of Information & Knowledge Management]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1142/S0219649224500333'  target='_blank'>[https://doi.org/10.1142/S0219649224500333]</a> </p>
+  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.worldscientific.com/toc/jikm/0/0' target='_blank'>[Journal of Information & Knowledge Management]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1142/S0219649224500333'  target='_blank'>[https://doi.org/10.1142/S0219649224500333]</a>  <br/><b>Indexed:</b> Emerging Sources Citation Index (ESCI), Scopus</p>
   
    <li style='color: #808080;'><b>Title:</b> <i>A model for multi-attack classification to improve intrusion detection performance using deep learning approaches</i></li> 
-  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.sciencedirect.com/journal/measurement-sensors' target='_blank'>[Measurement: Sensors]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1016/j.measen.2023.100924'  target='_blank'>[https://doi.org/10.1016/j.measen.2023.100924]</a> </p>
+  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al.<br/> <b>Journal:</b> <a href='https://www.sciencedirect.com/journal/measurement-sensors' target='_blank'>[Measurement: Sensors]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1016/j.measen.2023.100924'  target='_blank'>[https://doi.org/10.1016/j.measen.2023.100924]</a> <br/><b>Indexed:</b> Scopus</p>
   
   <li style='color: #808080;'><b>Title:</b> <i>An Effective Deep Learning Based Multi-Class Classification of DoS and DDoS Attack Detection</i></li> 
-  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al. <br/> <b>Journal:</b> <a href='https://ijeces.ferit.hr/index.php/ijeces/article/view/1780' target='_blank'>[International Journal of Electrical and Computer Engineering Systems]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.32985/ijeces.14.4.6'  target='_blank'>[https://doi.org/10.32985/ijeces.14.4.6]</a> </p>
+  <p> <b>Authors: </b>Arun Silivery, Kovvur Ram Mohan Rao et. al. <br/> <b>Journal:</b> <a href='https://ijeces.ferit.hr/index.php/ijeces/article/view/1780' target='_blank'>[International Journal of Electrical and Computer Engineering Systems]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.32985/ijeces.14.4.6'  target='_blank'>[https://doi.org/10.32985/ijeces.14.4.6]</a> <br/><b>Indexed:</b> Emerging Sources Citation Index (ESCI), Scopus</p>
   
   <li style='color: #808080;'><b>Title:</b> <i>Intrusion detection models for IOT networks via deep learning approaches</i></li> 
-  <p> <b>Authors: </b> Bhukya Madhu, M. Venu Gopala Chari, Ramdas Vankdothu, <b>Arun Silivery</b>, Veerender Aerranagula <br/> <b>Journal:</b> <a href='https://www.sciencedirect.com/journal/measurement-sensors' target='_blank'>[Measurement: Sensors]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1016/j.measen.2022.100641'  target='_blank'>[https://doi.org/10.1016/j.measen.2022.100641]</a> </p>
+  <p> <b>Authors: </b> Bhukya Madhu, M. Venu Gopala Chari, Ramdas Vankdothu, <b>Arun Silivery</b>, Veerender Aerranagula <br/> <b>Journal:</b> <a href='https://www.sciencedirect.com/journal/measurement-sensors' target='_blank'>[Measurement: Sensors]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1016/j.measen.2022.100641'  target='_blank'>[https://doi.org/10.1016/j.measen.2022.100641]</a> <br/><b>Indexed:</b> Scopus</p>
  
 </ul>  
 <br/>
@@ -32,10 +32,10 @@ For my latest publications please visit <a href='https://scholar.google.com/cita
   <p> <b>Authors: </b><b>Arun Silivery</b>, Kovvur Ram Mohan Rao et. al.<br/> <b>Conference:</b> <a href='https://sites.google.com/view/iccic-2023' target='_blank'>[ICCIC'23]</a>  &nbsp;<b>Status:</b> [Accepted] </p>
   
   <li style='color: #808080;'><b>Title:</b> <i>An advanced intrusion detection algorithm for network traffic using convolution neural network</i></li> 
-  <p> <b>Authors: </b> Arun Silivery, Kovvur Ram Mohan Rao et. al. <br/> <b>Conference:</b> <a href='https://doi.org/10.1109/ICECCT56650.2023.10179767' target='_blank'>[ICECCT'23]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1109/ICECCT56650.2023.10179767'  target='_blank'>[https://doi.org/10.1109/ICECCT56650.2023.10179767]</a> </p>
+  <p> <b>Authors: </b> Arun Silivery, Kovvur Ram Mohan Rao et. al. <br/> <b>Conference:</b> <a href='https://doi.org/10.1109/ICECCT56650.2023.10179767' target='_blank'>[ICECCT'23]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1109/ICECCT56650.2023.10179767'  target='_blank'>[https://doi.org/10.1109/ICECCT56650.2023.10179767]</a> <br/><b>Indexed:</b>Scopus</p>
   
   <li style='color: #808080;'><b>Title:</b> <i>Secure routing protocol comparison analysis between RNBR with TMR and face</i></li> 
-  <p> <b>Authors: </b> T. Shekar Reddy; Y. Rama Devi, <b>Arun Silivery</b>, Veerender Aerranagula <br/> <b>Conference:</b> <a href='https://doi.org/10.1063/5.0129257' target='_blank'>[CINS'22]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1063/5.0129257'  target='_blank'>[https://doi.org/10.1063/5.0129257]</a> </p>
+  <p> <b>Authors: </b> T. Shekar Reddy; Y. Rama Devi, <b>Arun Silivery</b>, Veerender Aerranagula <br/> <b>Conference:</b> <a href='https://doi.org/10.1063/5.0129257' target='_blank'>[CINS'22]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1063/5.0129257'  target='_blank'>[https://doi.org/10.1063/5.0129257]</a> <br/><b>Indexed:</b>Scopus</p>
  
 </ul>  
 
