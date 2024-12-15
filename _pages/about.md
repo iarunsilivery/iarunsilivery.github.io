@@ -42,9 +42,9 @@ redirect_from:
 <h3>Scientific Services</h3>
 <hr/>
 <ul>  
-  <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/neurocomputing' target='_blank'>Neurocomputing</a> <a href='https://drive.google.com/file/d/1jZn9wpxC6mJfkL3CbOzN8w2l13lAhMob/view' target='_blank'> [Certificate] </a> </li>
- 
-<li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/neural-networks' target='_blank'>Neural Networks</a> <a href='drive.google.com/file/d/1c2v_OYpOTCHb8a-e54m2WwdHew3OJXdP/view' target='_blank'> [Certificate] </a> </li>
+  <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/neural-networks' target='_blank'>Neural Networks</a> <a href='drive.google.com/file/d/1c2v_OYpOTCHb8a-e54m2WwdHew3OJXdP/view' target='_blank'> [Certificate] </a> </li>
+
+<li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/neurocomputing' target='_blank'>Neurocomputing</a> <a href='https://drive.google.com/file/d/1jZn9wpxC6mJfkL3CbOzN8w2l13lAhMob/view' target='_blank'> [Certificate] </a> </li>
    
    <li> Acted as external reviewer for <a href='https://www.sciencedirect.com/journal/measurement-sensors' target='_blank'>Measurement: Sensors</a> <a href='https://drive.google.com/file/d/1yNsCtpraulPgvmRfvN7avUYMPwaLxLqp/view' target='_blank'> [Certificate] </a> </li>
 
