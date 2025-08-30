@@ -1,14 +1,13 @@
 ---
-title: "Teaching experience 1"
-collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+title: "Operating Systems"
+instructor: "Dr. Arun Silivery"
+semester: "Aug–Dec 2025 (Odd Semester)"
+status: "In Progress"
+description: "Introduction to Operating System concepts, process management, memory management, and file systems."
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+
+The operating system Course is in progress...!
 
 Heading 1
 ======
