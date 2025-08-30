@@ -47,13 +47,24 @@ layout: default
   </ul>
 {% endif %}
        {% if page.url == "/talks/" %}
+  {# Custom page content (only once) #}
+  {{ content }}
+
+  {# List of talks #}
   <ul class="talks-list">
-     {{ content }}
-    {% for item in site.talks %}
-     
+    {% assign sorted_talks = site.talks | sort: "date" | reverse %}
+    {% for item in sorted_talks %}
+      <li class="talk-item">
+        <h3>{{ item.title }}</h3>
+        {% if item.speaker %}<p><strong>Speaker:</strong> {{ item.speaker }}</p>{% endif %}
+        {% if item.date %}<p><strong>Date:</strong> {{ item.date }}</p>{% endif %}
+        {% if item.location %}<p><strong>Location:</strong> {{ item.location }}</p>{% endif %}
+        {% if item.link %}<p><a href="{{ item.link }}" target="_blank">More Info</a></p>{% endif %}
+      </li>
     {% endfor %}
   </ul>
 {% endif %}
+
 
     
     {% if page.url == "/teaching/" %}
