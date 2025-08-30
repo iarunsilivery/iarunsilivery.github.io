@@ -20,20 +20,20 @@ layout: default
       <h1 class="page__title">{{ page.title }}</h1>
     {% endunless %}
 
-    {% if site.teaching.size > 0 %}
-      <ul class="teaching-list">
-        {% for item in site.teaching %}
-          <li class="teaching-item">
-            <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
-            {% if item.instructor %}<p><strong>Instructor:</strong> {{ item.instructor }}</p>{% endif %}
-            {% if item.semester %}<p><strong>Semester:</strong> {{ item.semester }}</p>{% endif %}
-            {% if item.description %}<p>{{ item.description }}</p>{% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <p>No teaching items found.</p>
-    {% endif %}
+    {% if page.url == "/teaching/" %}
+  <ul class="teaching-list">
+    {% for item in site.teaching %}
+      <li class="teaching-item">
+        <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+        {% if item.status %}<p><strong>Status:</strong> {{ item.status }}</p>{% endif %}
+        {% if item.semester %}<p><strong>Semester:</strong> {{ item.semester }}</p>{% endif %}
+        {% if item.instructor %}<p><strong>Instructor:</strong> {{ item.instructor }}</p>{% endif %}
+        {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
   </div>
 </div>
 
