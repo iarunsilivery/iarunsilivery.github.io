@@ -28,8 +28,17 @@ For my latest publications please visit <a href='https://scholar.google.com/cita
 <b>Conferences</b>
 <hr/>
 <ul> 
+
+<li style='color: #808080;'><b>Title:</b> <i>A Novel Hybrid Framework for Annual and Quarterly Rainfall Prediction
+Combining CNN and LSTM Networks</i></li> 
+ 
+  <p> <b>Authors: </b><b>Arun Silivery et. al.</b><br/> <b>Conference:</b> [IEEE AMATHE 2025]  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1109/AMATHE65477.2025.11080883'  target='_blank'>[https://doi.org/10.1109/AMATHE65477.2025.11080883]</a> <br/><b>Indexed:</b>Scopus</p> 
+ 
    <li style='color: #808080;'><b>Title:</b> <i>Inculcated feature selection process using INBPOA for DDoS Detection and classification</i></li> 
-  <p> <b>Authors: </b><b>Arun Silivery</b>, Kovvur Ram Mohan Rao et. al.<br/> <b>Conference:</b> <a href='https://sites.google.com/view/iccic-2023' target='_blank'>[ICCIC'23]</a>  &nbsp;<b>Status:</b> [Accepted] </p>
+ 
+  <p> <b>Authors: </b><b>Arun Silivery</b>, Kovvur Ram Mohan Rao et. al.<br/> <b>Conference:</b> <a href='https://sites.google.com/view/iccic-2023' target='_blank'>[ICCIC'23]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1007/978-981-97-9266-5_24'  target='_blank'>[https://doi.org/10.1007/978-981-97-9266-5_24]</a> <br/><b>Indexed:</b>Scopus</p>
+   
+  
   
   <li style='color: #808080;'><b>Title:</b> <i>An advanced intrusion detection algorithm for network traffic using convolution neural network</i></li> 
   <p> <b>Authors: </b> Arun Silivery, Kovvur Ram Mohan Rao et. al. <br/> <b>Conference:</b> <a href='https://doi.org/10.1109/ICECCT56650.2023.10179767' target='_blank'>[ICECCT'23]</a>  &nbsp;<b>DoI:</b> <a href='https://doi.org/10.1109/ICECCT56650.2023.10179767'  target='_blank'>[https://doi.org/10.1109/ICECCT56650.2023.10179767]</a> <br/><b>Indexed:</b>Scopus</p>
