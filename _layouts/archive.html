@@ -22,8 +22,9 @@ layout: default
 
 {% if page.url == "/publications/" %}
   <ul class="publication-list">
+     {{ content }}
     {% for item in site.publications %}
-      {{ content }}
+     
     {% endfor %}
   </ul>
 {% endif %}
