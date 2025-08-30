@@ -46,13 +46,17 @@ layout: default
     {% endfor %}
   </ul>
 {% endif %}
-    
-       {% if page.url == "/talks/" %}
-  
-  {{ content }}
- 
-{% endif %}
 
+    {% if page.url == "/talks/" %}
+  <ul class="talks-list">
+     {{ content }}
+    {% for item in site.talks %}
+     
+    {% endfor %}
+  </ul>
+{% endif %}
+    
+      
 
     
     {% if page.url == "/teaching/" %}
