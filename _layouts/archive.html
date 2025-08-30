@@ -29,6 +29,32 @@ layout: default
   </ul>
 {% endif %}
 
+    {% if page.url == "/cv/" %}
+  <ul class="cv-list">
+     {{ content }}
+    {% for item in site.cv %}
+     
+    {% endfor %}
+  </ul>
+{% endif %}
+
+       {% if page.url == "/Research/" %}
+  <ul class="Research-list">
+     {{ content }}
+    {% for item in site.Research %}
+     
+    {% endfor %}
+  </ul>
+{% endif %}
+       {% if page.url == "/talks/" %}
+  <ul class="talks-list">
+     {{ content }}
+    {% for item in site.talks %}
+     
+    {% endfor %}
+  </ul>
+{% endif %}
+
     
     {% if page.url == "/teaching/" %}
   <ul class="teaching-list">
