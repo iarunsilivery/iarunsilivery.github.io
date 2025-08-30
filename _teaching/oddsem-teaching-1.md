@@ -1,5 +1,5 @@
 ---
-title: "Operating Systems"
+title: "U22PC540IT - Operating Systems"
 instructor: "Dr. Arun Silivery"
 semester: "Aug–Dec (Odd Semester)"
 status: "In Progress"
