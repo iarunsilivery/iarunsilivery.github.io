@@ -1,0 +1,268 @@
+/*******************************************************************************
+ * Responsive containers and navbar.
+ *
+ * - Bootstrap-style container widths (fluid on phones, then 540 / 720 / 960 /
+ *   1140px) shared by the navbar and the page content, so they always line up.
+ * - Solid (non-transparent) navbar and menus.
+ * - The menu collapses into the hamburger below 992px instead of 576px, so the
+ *   full name plus menu items never wrap or overflow on tablets.
+ * - Hides the "ctrl k" hint next to the search icon.
+ *
+ * `html` prefixes raise specificity above the gem's own rules, which are
+ * emitted later in main.css.
+ ******************************************************************************/
+
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$gutter: clamp(1rem, 3vw, 1.5rem);
+
+/* --------------------------------------------------------------------------
+ * Containers
+ * ------------------------------------------------------------------------ */
+html .container {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+@media (min-width: $bp-sm) {
+  html .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: $bp-md) {
+  html .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: $bp-lg) {
+  html .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: $bp-xl) {
+  html .container {
+    max-width: 1140px;
+  }
+}
+
+// Keep wide content inside the container on small screens.
+html .post article {
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: ($bp-md - 0.02px)) {
+  // Markdown tables (teaching, people) scroll sideways instead of overflowing.
+  html .post article table:not(.table-cv) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  html .site-breadcrumb .breadcrumb {
+    min-height: 40px;
+    font-size: 0.85rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Navbar: solid background
+ * ------------------------------------------------------------------------ */
+html .navbar {
+  opacity: 1;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: var(--global-bg-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="dark"] .navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+html .navbar .dropdown-menu {
+  background-color: var(--global-card-bg-color);
+  opacity: 1;
+}
+
+// Menu items in Title Case ("about" -> "About"; "CV" stays "CV").
+html .navbar .navbar-nav .nav-link,
+html .navbar .dropdown-item {
+  text-transform: capitalize;
+}
+
+// Name in the navbar: first name near-black, the rest grey.
+// (`html` + the gem's own selector chain outranks `.navbar.navbar-light .navbar-brand`.)
+html .navbar.navbar-light .navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  color: #6b7280; // grey, 4.8:1 on white
+
+  .font-weight-bold {
+    font-weight: 700;
+    color: #0a0a0a;
+  }
+
+  .brand-last {
+    font-weight: 700;
+    color: #6b7280;
+  }
+}
+
+html[data-theme="dark"] .navbar.navbar-light .navbar-brand {
+  color: #94a3b8;
+
+  .font-weight-bold {
+    color: #ffffff;
+  }
+
+  .brand-last {
+    color: #94a3b8;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html .navbar.navbar-light .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
+
+// Hide the "ctrl k" text but keep the magnifying-glass icon (the button keeps
+// its "Open search" label for screen readers).
+#search-toggle .nav-link {
+  font-size: 0;
+}
+
+// Search and theme buttons: identical 2rem boxes, same icon size, same
+// vertical position (the gem nudges only the theme button down by 4px).
+html #search-toggle,
+html #light-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+}
+
+html #search-toggle .nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  line-height: 1;
+}
+
+html #search-toggle .nav-link i,
+html #light-toggle i {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+// Line both icons up with the menu text: centre every item in the menu row and
+// drop the gem's 4px nudge on the theme button.
+html #search-toggle,
+html #light-toggle {
+  transform: none !important;
+}
+
+@media (min-width: $bp-lg) {
+  html .navbar .navbar-menu-list {
+    align-items: center;
+  }
+
+  html .navbar .navbar-menu-list > .nav-item,
+  html .navbar .navbar-menu-list > .toggle-container {
+    display: flex;
+    align-items: center;
+  }
+
+  html .navbar .toggle-container {
+    margin-left: 0.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Navbar: collapse below 992px
+ *
+ * Tailwind's compiled navbar rules use !important inside cascade layers, and
+ * layered !important declarations beat unlayered ones. Declaring these in the
+ * first layer Tailwind defines ("properties") is what lets them take effect.
+ * ------------------------------------------------------------------------ */
+@layer properties {
+  @media (min-width: $bp-sm) and (max-width: ($bp-lg - 0.02px)) {
+    .navbar-expand-sm .navbar-collapse:not(.show) {
+      display: none !important;
+    }
+
+    .navbar-expand-sm .navbar-collapse.show {
+      display: block !important;
+    }
+
+    .navbar-expand-sm .navbar-toggler {
+      display: block !important;
+    }
+
+    .navbar-expand-sm .navbar-nav {
+      flex-direction: column !important;
+    }
+
+    .navbar-expand-sm .navbar-nav .dropdown-menu {
+      position: static !important;
+    }
+  }
+}
+
+@media (max-width: ($bp-lg - 0.02px)) {
+  html .navbar {
+    .navbar-toggler-main {
+      margin-left: auto;
+    }
+
+    .navbar-collapse-main {
+      text-align: left;
+    }
+
+    .navbar-collapse-main.show {
+      max-height: calc(100vh - 60px);
+      overflow-y: auto;
+      padding: 0.5rem 0 0.75rem;
+    }
+
+    .navbar-menu-list {
+      margin-left: 0;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .navbar-menu-list > .nav-item {
+      width: 100%;
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    .navbar-menu-list .nav-link {
+      padding: 0.6rem 0.25rem;
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      min-width: 100%;
+      margin-top: 0;
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{%- comment -%}
+  Publication venue-line badges, included by al_folio_core's bib layout for
+  every entry (see docs/CUSTOMIZE.md). `entrytype` is the venue text shown.
+
+  1. A type badge in front of the venue: Journal (@article), Conference
+     (@inproceedings / @conference / @proceedings) or Book (@book / @incollection).
+  2. Index badges after the venue from the custom `indexed = {SCIE, Scopus}` field.
+{%- endcomment -%}
+{%- assign pub_type = '' -%}
+{%- assign pub_type_class = '' -%}
+{%- case entry.type -%}
+  {%- when 'article' -%}
+    {%- assign pub_type = 'Journal' -%}
+    {%- assign pub_type_class = 'text-bg-dark' -%}
+  {%- when 'inproceedings', 'conference', 'proceedings' -%}
+    {%- assign pub_type = 'Conference' -%}
+    {%- assign pub_type_class = 'text-bg-warning' -%}
+  {%- when 'book', 'incollection', 'inbook' -%}
+    {%- assign pub_type = 'Book' -%}
+    {%- assign pub_type_class = 'text-bg-secondary' -%}
+{%- endcase -%}
+
+{%- if entry.indexed -%}
+  {%- assign idx_list = entry.indexed | split: ',' -%}
+  {%- capture idx_badges -%}
+    {%- for idx in idx_list -%}
+      {%- assign idx_name = idx | strip -%}
+      {%- case idx_name -%}
+        {%- when 'SCIE' -%}{%- assign idx_class = 'text-bg-success' -%}
+        {%- when 'ESCI' -%}{%- assign idx_class = 'text-bg-info' -%}
+        {%- when 'Scopus' -%}{%- assign idx_class = 'text-bg-primary' -%}
+        {%- else -%}{%- assign idx_class = 'text-bg-secondary' -%}
+      {%- endcase -%}
+      {{ ' ' }}<span class="badge rounded-pill {{ idx_class }}" title="Indexed in {{ idx_name }}">{{ idx_name }}</span>
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- capture entrytype -%}{{ entrytype }}{{ idx_badges }}{%- endcapture -%}
+{%- endif -%}
+
+{%- if pub_type != '' -%}
+  {%- capture entrytype -%}<span class="badge rounded-pill pub-type {{ pub_type_class }}">{{ pub_type }}</span> {{ entrytype }}{%- endcapture -%}
+{%- endif -%}

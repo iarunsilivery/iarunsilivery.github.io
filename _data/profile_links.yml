@@ -1,0 +1,31 @@
+# Academic profile links shown under the profile photo (home page) and in the footer.
+# Every link opens in a new tab. Order here is the display order.
+# To add one, fill in its `url` and remove the `#` in front of its lines.
+
+- name: Email
+  icon: fa-solid fa-envelope
+  url: mailto:siliveryarun@gmail.com
+
+- name: LinkedIn
+  icon: fa-brands fa-linkedin
+  url: https://www.linkedin.com/in/arunsilivery/
+
+- name: Google Scholar
+  icon: ai ai-google-scholar
+  url: https://scholar.google.com/citations?user=A3vUJfI2i0MC
+
+- name: ResearchGate
+  icon: ai ai-researchgate
+  url: https://www.researchgate.net/profile/Arun-Silivery
+
+- name: ORCID iD
+  icon: ai ai-orcid
+  url: https://orcid.org/0000-0001-6292-4821
+
+- name: Scopus
+  icon: ai ai-scopus
+  url: https://www.scopus.com/authid/detail.uri?authorId=58017060700
+
+- name: ResearcherID (Web of Science)
+  icon: ai ai-researcherid
+  url: https://www.webofscience.com/wos/author/record/JQX-1866-2023

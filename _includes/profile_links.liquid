@@ -1,0 +1,16 @@
+{%- comment -%}
+  Round academic-profile icon links from _data/profile_links.yml.
+  Used under the profile photo (_layouts/about.liquid) and in the footer.
+  Pass class="..." to add a modifier class, e.g. {% include profile_links.liquid class="profile-links-footer" %}.
+{%- endcomment -%}
+{%- if site.data.profile_links -%}
+  <nav class="profile-links {{ include.class }}" aria-label="Academic profiles">
+    {%- for link in site.data.profile_links -%}
+      {%- if link.url -%}
+        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.name }}" aria-label="{{ link.name }} (opens in a new tab)">
+          <i class="{{ link.icon }}" aria-hidden="true"></i>
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </nav>
+{%- endif -%}

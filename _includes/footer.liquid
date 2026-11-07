@@ -1,0 +1,26 @@
+{%- comment -%}
+  Local override of al_folio_core's _includes/footer.liquid.
+  A slim footer bar: copyright on the left, academic profile icons on the right
+  (from _data/profile_links.yml). Styles: _sass/_footer-site.scss.
+  Uses `footer_fixed: false` in _config.yml, so it sits at the end of the page.
+{%- endcomment -%}
+{%- capture full_name -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{%- endcapture -%}
+<footer class="site-footer" role="contentinfo">
+  {% if site.newsletter.enabled %}
+    {% if site.plugins contains 'al_newsletter' %}
+      {% include plugins/al_newsletter_form_center.liquid %}
+    {% else %}
+      {% include newsletter.liquid %}
+    {% endif %}
+  {% endif %}
+
+  <div class="container site-footer-inner">
+    <p>
+      &copy; {{ site.time | date: '%Y' }} {{ full_name }} 
+      {%- if site.impressum_path %}
+        · <a href="{{ site.impressum_path | relative_url }}">Impressum</a>
+      {%- endif %}
+    </p>
+    {% include profile_links.liquid class="profile-links-footer" %}
+  </div>
+</footer>

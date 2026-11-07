@@ -1,189 +1,200 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  name: Dr. Arun Kumar Silivery
+  label: Assistant Professor, Computer Science & Engineering
+  email: siliveryarun@gmail.com
+  website: https://iarunsilivery.github.io
+  location: Hyderabad, Telangana, India
+  summary: >-
+    Assistant Professor at Vasavi College of Engineering (Autonomous), Hyderabad, with a Ph.D. in Computer Science & Engineering from
+    Osmania University. My research develops deep learning-based intrusion detection systems for network attack detection and
+    classification, with a focus on DoS/DDoS attacks and IoT networks. I have published 6 journal articles and 4 conference papers, hold
+    3 published Indian patents and designs, and review for 9 international journals.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
     - network: LinkedIn
-      username: example
+      username: arunsilivery
+    - network: ORCID
+      username: 0000-0001-6292-4821
+    - network: ResearchGate
+      username: Arun-Silivery
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    city: Hyderabad
+    region: Telangana, India
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: University College of Engineering, Osmania University
+        location: Hyderabad, India
+        area: Computer Science & Engineering
+        studyType: Ph.D.
+        start_date: 2018-09-01
+        end_date: 2024-10-01
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Dissertation: *A Deep Learning-Based IDS Framework for Network Attack Detection and Classification*"
+          - "Advisor: Prof. Ram Mohan Rao Kovvur"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Jawaharlal Nehru Technological University
+        location: Hyderabad, India
+        area: Computer Science & Engineering
+        studyType: Master's
+        start_date: 2014-08-01
+        end_date: 2016-10-01
         highlights:
-          - Description 1.
-          - Description 2.
+          - "71.8% (First Class with Distinction)"
+
+      - institution: Vasavi College of Engineering, Osmania University
+        location: Hyderabad, India
+        area: Computer Science & Engineering
+        studyType: Bachelor's
+        start_date: 2007-08-01
+        end_date: 2011-06-01
+        highlights:
+          - "63.3% (First Class)"
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
+      - company: Vasavi College of Engineering (Autonomous)
+        position: Assistant Professor
+        location: Hyderabad, India
+        start_date: 2025-07-01
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
+      - company: Methodist College of Engineering & Technology (Autonomous)
+        position: Assistant Professor
+        location: Hyderabad, India
+        start_date: 2024-12-01
+        end_date: 2025-07-01
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+    Academic Interests:
+      - name: Cybersecurity
+        icon: fa-solid fa-shield-halved
+        keywords: "Intrusion Detection Systems, Network Attack Classification, DoS/DDoS Detection, IoT Security, Secure Routing"
+      - name: Machine Learning
+        icon: fa-solid fa-brain
+        keywords: "Deep Learning, CNN, LSTM, DenseNet, Feature Selection, Time-Series Prediction"
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+      - title: Dual-path Feature Extraction based Hybrid Intrusion Detection in IoT Networks
+        publisher: Computers and Electrical Engineering, Elsevier, Vol. 122, 109949 (SCIE, Scopus)
+        releaseDate: 2025-01-01
+        url: https://doi.org/10.1016/j.compeleceng.2024.109949
+      - title: Computer Allied Intelligence in the Education Resource-Sharing Based in Contract Deep Learning
+        publisher: Journal of Computer Allied Intelligence, 2(4), 51-69
+        releaseDate: 2024-08-01
+        url: https://doi.org/10.69996/jcai.2024019
+      - title: RAP-DenseNet Framework for Network Attack Detection and Classification
+        publisher: Journal of Information & Knowledge Management, World Scientific (ESCI, Scopus)
+        releaseDate: 2024-03-01
+        url: https://doi.org/10.1142/S0219649224500333
+      - title: An Effective Deep Learning Based Multi-Class Classification of DoS and DDoS Attack Detection
+        publisher: International Journal of Electrical and Computer Engineering Systems, 14(4), 421-431 (ESCI, Scopus)
+        releaseDate: 2023-04-01
+        url: https://doi.org/10.32985/ijeces.14.4.6
+      - title: A model for multi-attack classification to improve intrusion detection performance using deep learning approaches
+        publisher: Measurement - Sensors, Elsevier, Vol. 30, 100924 (Scopus)
+        releaseDate: 2023-12-01
+        url: https://doi.org/10.1016/j.measen.2023.100924
+      - title: Intrusion detection models for IOT networks via deep learning approaches
+        publisher: Measurement - Sensors, Elsevier, Vol. 25, 100641 (Scopus)
+        releaseDate: 2023-02-01
+        url: https://doi.org/10.1016/j.measen.2022.100641
+      - title: A Novel Hybrid Framework for Annual and Quarterly Rainfall Prediction Combining CNN and LSTM Networks
+        publisher: AMATHE 2025, IEEE Bangalore Section
+        releaseDate: 2025-04-24
+        url: https://doi.org/10.1109/AMATHE65477.2025.11080883
+      - title: Inculcated feature selection process using INBPOA for DDoS Detection and classification
+        publisher: ICCIC'23 Proceedings, Springer Nature Singapore, Vol. 2, 241-249
+        releaseDate: 2025-02-01
+        url: https://doi.org/10.1007/978-981-97-9266-5_24
+      - title: An advanced intrusion detection algorithm for network traffic using convolution neural network
+        publisher: ICECCT 2023, IEEE Xplore (Scopus)
+        releaseDate: 2023-02-01
+        url: https://doi.org/10.1109/ICECCT56650.2023.10179767
+      - title: Secure routing protocol comparison analysis between RNBR with TMR and face
+        publisher: ICCINS-2022, AIP Conference Proceedings 2724, 040004 (Scopus)
+        releaseDate: 2023-04-28
+        url: https://doi.org/10.1063/5.0129257
+      - title: Node Securing Protocol for Effective Routing in Mobile AdHoc Network (Book)
+        publisher: Lambert Academic Publishing, ISBN 978-620-4-75253-2
+        releaseDate: 2022-01-01
+        url: https://my.lap-publishing.com/catalog/details/store/ru/book/978-620-4-75253-2/node-securing-protocol-for-effective-routing-in-mobile-ad-hoc-network
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+    Patents and Designs:
+      - bullet: "**Cyber Security Analytic Device**: Indian Design Patent No. 458382-001, Class 14-02. Filed 10 May 2025, published 22 Aug 2025."
+      - bullet: "**EEG Based Brain Computer Interface**: Indian Design Patent No. 458280-001, Class 24-02. Filed 09 May 2025, published 22 Aug 2025."
+      - bullet: "**Design of Secure IoT Healthcare Architecture with Deep-Learning Based Access Control System**: Indian Patent Application No. 202341010686. Filed 17 Feb 2023, published 17 Mar 2023."
 
     Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+      - name: "Fundamentals of Generative AI and Large Language Models: Theory and Practice (NPTEL Elite + AICTE FDP, 12 weeks)"
+        issuer: IISc Bangalore
+        date: 2026-10-01
+        icon: fa-solid fa-award
+      - name: "The Joy of Computing using Python (NPTEL Elite + AICTE FDP, 12 weeks)"
+        issuer: IIT Madras
+        date: 2026-04-01
+        icon: fa-solid fa-award
+      - name: "Operating System Fundamentals (NPTEL Elite, 12 weeks)"
+        issuer: IIT Kharagpur
+        date: 2025-10-01
+        icon: fa-solid fa-award
+      - name: "Introduction to Internet of Things (NPTEL Elite, 12 weeks)"
+        issuer: IIT Kharagpur
+        date: 2024-10-01
+        icon: fa-solid fa-award
+      - name: "Deep Learning (NPTEL, 12 weeks)"
+        issuer: IIT Ropar
+        date: 2024-10-01
+        icon: fa-solid fa-certificate
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+    Honors and Awards:
+      - title: GATE qualified, Data Science & Artificial Intelligence (DA)
+        date: 2024-01-01
+        awarder: Graduate Aptitude Test in Engineering
+      - title: GATE qualified, Computer Science & Information Technology (CS)
+        date: 2023-01-01
+        awarder: Graduate Aptitude Test in Engineering
+        summary: Also qualified in 2012.
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+    Professional Memberships:
+      - bullet: "Internet Society (ISOC): Life Member, 2322275"
+      - bullet: "International Association of Engineers (IAENG): Life Member, 501099"
+      - bullet: "Indian Society for Technical Education (ISTE): Life Member, LM145167"
+      - bullet: "Association for Computing Machinery (ACM): Professional Member, 4204425"
+      - bullet: "The International Society for Applied Computing (ISAC): Senior Life Member, SM2026020306"
 
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+    Reviewer Service:
+      - bullet: "Recognised reviewer for *Neurocomputing*, *Neural Networks*, *Scientific Reports*, *Measurement: Sensors*, *Computer Standards & Interfaces*, *Expert Systems with Applications*, *International Journal of Intelligent Networks*, *Journal of Network and Systems Management* and *Journal of Network and Computer Applications*."
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    Faculty Development and Training:
+      - bullet: "Workshop: *Build Smart with Arduino*, IIT Madras (online), 12 Sep 2026"
+      - bullet: "NEP September 2026 Orientation & Sensitization Programme, UGC Malaviya Mission Teacher Training Programme, IIT Hyderabad, 15–21 Sep 2026"
+      - bullet: "AICTE ATAL FDP: *Drone-Based Multi-Sensor Remote Sensing and AI for Geospatial and Environmental Applications*, Vasavi College of Engineering, 17–22 Aug 2026"
+      - bullet: "NEP July 2026 Orientation & Sensitization Programme, UGC Malaviya Mission Teacher Training Programme, IIT Hyderabad, 16–24 Jul 2026"
+      - bullet: "Centre for Engineering Education Excellence (CEEE) Program, INAE with Infosys Foundation & AICTE (equivalent to 2-week AICTE ATAL FDP), IIT Hyderabad, 7–28 Jun 2026"
+      - bullet: "FDP: *Principles and Applications of Quantum Computing*, CQST, IIT Mandi, 8–18 Jun 2026"
+      - bullet: "AICTE ATAL FDP: *Quantum Algorithms and Cryptography*, Keshav Memorial Institute of Technology, 18–23 Aug 2025"
+      - bullet: "FDP: *AI Tools*, Muffakham Jah College of Engineering & Technology, 17–21 Feb 2025"
+      - bullet: "FDP: *Embracing the Future: Innovations in Education, Technology and Research*, Methodist College of Engineering & Technology, 3–7 Feb 2025"
+      - bullet: "FDP: *Data Visualization and Business Intelligence using Power BI and Tableau*, Methodist College of Engineering & Technology, 27–31 Jan 2025"
+      - bullet: "Session Chair and Jury Member, National Seminar on *Innovative Techniques in Associating Databases Application Programming Interfaces*, Smt. A Shyamala Devi Degree College for Women, 25 Jan 2025"
+      - bullet: "FDP: *Deep Learning and AI Applications*, E&ICT Academy, NIT Warangal with Vasavi College of Engineering, 21–30 Jun 2021"
+      - bullet: "FDP: *Trends and Advances in Cryptography*, Sreenidhi Institute of Science and Technology, 24–28 Aug 2020"
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    Skills:
+      - name: Programming Languages
+        icon: fa-solid fa-code
+        keywords: "C, C++, C#, Python"
+      - name: Deep Learning Frameworks
+        icon: fa-solid fa-brain
+        keywords: "TensorFlow, Keras, PyTorch"
+      - name: Web Development
+        icon: fa-solid fa-globe
+        keywords: "HTML5, CSS3, jQuery, Bootstrap, ASP.NET"
+      - name: Databases
+        icon: fa-solid fa-database
+        keywords: "MS SQL Server, MySQL, MongoDB"
+      - name: Operating Systems
+        icon: fa-brands fa-windows
+        keywords: "MS Windows Server 2016, 2019, 2022"
+      - name: Tools
+        icon: fa-solid fa-screwdriver-wrench
+        keywords: "Visual Studio, PyCharm, Jupyter, LaTeX, GitHub"

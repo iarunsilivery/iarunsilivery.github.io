@@ -1,0 +1,524 @@
+/*******************************************************************************
+ * Bootstrap-style components without loading Bootstrap.
+ *
+ * Markup and class names follow Bootstrap's breadcrumb, card, badge and
+ * accordion components, so content can be written the Bootstrap way. The site
+ * runs on al-folio's Tailwind build (which already defines a few Bootstrap
+ * names such as .card and .badge), so these rules only fill in what is missing
+ * and are scoped where the gem uses the same class names (e.g. the CV page).
+ * Colours use the theme variables from _themes.scss, so dark mode works.
+ ******************************************************************************/
+
+$bs-blue-900: #036;
+$bs-blue-600: #06c;
+
+/* --------------------------------------------------------------------------
+ * Breadcrumb
+ * ------------------------------------------------------------------------ */
+// Small full-width banner directly under the navbar. The inner .container
+// keeps the text aligned with the page content.
+.site-breadcrumb {
+  width: 100%;
+  background: linear-gradient(135deg, $bs-blue-900, $bs-blue-600);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.site-breadcrumb .breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0;
+  min-height: 46px;
+  margin: 0;
+  padding: 0.6rem 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+// The banner already separates the navbar from the content, so the content
+// needs less top space on pages that have it. Tailwind's `.mt-5` is a layered
+// !important rule, so this override has to live in the first layer too
+// (see the navbar note in _responsive.scss).
+@layer properties {
+  .site-breadcrumb ~ .container[role="main"] {
+    margin-top: 2rem !important;
+  }
+}
+
+.site-breadcrumb .breadcrumb-item {
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+
+    &:hover,
+    &:focus-visible {
+      color: #fff;
+      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  }
+
+  i {
+    margin-right: 0.3rem;
+  }
+
+  &.active {
+    font-weight: 600;
+  }
+
+  & + .breadcrumb-item::before {
+    content: "\203A"; // single right-pointing angle quotation mark
+    padding: 0 0.55rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Profile icon links under the photo (home page)
+ * ------------------------------------------------------------------------ */
+// `html` outranks the gem's later `.profile .more-info` rule (monospace font).
+html .profile .more-info {
+  text-align: center;
+  font-family: inherit;
+}
+
+/* --------------------------------------------------------------------------
+ * Profile card (home page, markup in _layouts/about.liquid)
+ * ------------------------------------------------------------------------ */
+html .profile.profile-has-card {
+  width: 280px;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1rem;
+  background-color: var(--global-card-bg-color);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 12px 32px rgba(0, 51, 102, 0.12);
+}
+
+html[data-theme="dark"] .profile-card {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.profile-card-banner {
+  height: 84px;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.18) 0 22%, transparent 23%),
+    radial-gradient(circle at 10% 110%, rgba(255, 255, 255, 0.12) 0 30%, transparent 31%),
+    linear-gradient(135deg, $bs-blue-900, $bs-blue-600);
+}
+
+.profile-card-photo {
+  position: relative;
+  width: 128px;
+  margin: -64px auto 0;
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: 128px !important;
+    height: 128px;
+    object-fit: cover;
+    border: 4px solid var(--global-card-bg-color);
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0, 51, 102, 0.25);
+  }
+}
+
+.profile-card-body {
+  padding: 0.85rem 1.1rem 1.25rem !important;
+}
+
+.profile-card-name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--global-text-color);
+}
+
+.profile-card-role {
+  display: inline-block;
+  margin: 0.4rem 0 0.25rem;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+  border-radius: 999px;
+  color: $bs-blue-600 !important;
+  background: color-mix(in srgb, #{$bs-blue-600} 10%, transparent);
+}
+
+html[data-theme="dark"] .profile-card-role {
+  color: #8ec5ff !important;
+  background: rgba(142, 197, 255, 0.12);
+}
+
+.profile-card .more-info {
+  margin: 0.35rem 0 0 !important;
+  font-size: 0.85rem;
+}
+
+// Seven icons fit on one row at the 280px card width.
+.profile-card .profile-links {
+  gap: 0.25rem;
+  margin: 0.9rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  a {
+    width: 1.85rem;
+    height: 1.85rem;
+    font-size: 0.9rem;
+  }
+}
+
+.profile-card-cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  color: #fff !important;
+  background: linear-gradient(135deg, $bs-blue-900, $bs-blue-600);
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.25);
+  text-decoration: none !important;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 51, 102, 0.35);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html .profile.profile-has-card {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 1.5rem !important;
+  }
+}
+
+// Tailwind's .float-left / .float-right are layered !important rules, so the
+// phone "no float" has to be declared in the first layer (see _responsive.scss).
+@layer properties {
+  @media (max-width: 575.98px) {
+    .profile.profile-has-card {
+      float: none !important;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-card-cv {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0.9rem 0 0.6rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.15rem;
+    height: 2.15rem;
+    font-size: 1.05rem;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(135deg, $bs-blue-900, $bs-blue-600);
+    box-shadow: 0 2px 6px rgba(0, 51, 102, 0.25);
+    text-decoration: none;
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+
+    i {
+      color: #fff;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: #fff;
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0, 51, 102, 0.35);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 2px;
+    }
+  }
+}
+
+.profile-affiliation {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--global-text-color-light);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-links a {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Cards (scoped to .bs-card-grid so the CV page keeps the gem's card style)
+ * ------------------------------------------------------------------------ */
+.bs-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.75rem;
+
+  .card {
+    height: 100%;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.6rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease,
+      border-color 0.15s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: var(--global-theme-color);
+      box-shadow: 0 8px 20px rgba(0, 51, 102, 0.12);
+    }
+  }
+
+  a.card,
+  a.card:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .card-body {
+    padding: 1.1rem 1.2rem;
+  }
+
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+
+    i {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .card-text {
+    margin: 0;
+    font-size: 0.925rem;
+    line-height: 1.55;
+    color: var(--global-text-color-light);
+  }
+
+  &.bs-stat-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  // Stat cards: big number on top
+  .card.text-center .card-body {
+    text-align: center;
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--global-theme-color);
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Badges (Bootstrap 5.3+ `text-bg-*` naming)
+ * ------------------------------------------------------------------------ */
+.badge.rounded-pill {
+  border-radius: 999px;
+  padding: 0.3em 0.65em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+// All pairs meet WCAG AA contrast for small bold text.
+.text-bg-primary {
+  color: #fff !important;
+  background-color: $bs-blue-600 !important;
+}
+
+.text-bg-success {
+  color: #fff !important;
+  background-color: #157347 !important;
+}
+
+.text-bg-info {
+  color: #fff !important;
+  background-color: #0f766e !important;
+}
+
+.text-bg-secondary {
+  color: #fff !important;
+  background-color: #5b6b80 !important;
+}
+
+.text-bg-warning {
+  color: #212529 !important;
+  background-color: #ffc107 !important;
+}
+
+.text-bg-dark {
+  color: #fff !important;
+  background-color: $bs-blue-900 !important;
+}
+
+/* --------------------------------------------------------------------------
+ * Accordion (native <details>/<summary>, so it works without JavaScript)
+ * ------------------------------------------------------------------------ */
+.accordion {
+  margin: 1rem 0 1.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.accordion-item {
+  background-color: var(--global-card-bg-color);
+
+  & + .accordion-item {
+    border-top: 1px solid var(--global-divider-color);
+  }
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  color: var(--global-text-color);
+  user-select: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    flex-shrink: 0;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-left: auto;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translate(-2px, -2px);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    color: var(--global-theme-color);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: -2px;
+  }
+
+  .badge {
+    font-weight: 600;
+  }
+}
+
+.accordion-item[open] > .accordion-button {
+  color: var(--global-theme-color);
+  background-color: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
+
+  &::after {
+    transform: rotate(-135deg) translate(-2px, -2px);
+  }
+}
+
+.accordion-body {
+  padding: 0.25rem 1.2rem 1rem;
+
+  ul {
+    margin-bottom: 0;
+    padding-left: 1.1rem;
+  }
+
+  li + li {
+    margin-top: 0.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bs-card-grid .card,
+  .accordion-button::after {
+    transition: none;
+  }
+
+  .bs-card-grid .card:hover {
+    transform: none;
+  }
+}

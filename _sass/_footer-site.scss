@@ -1,0 +1,151 @@
+/*******************************************************************************
+ * Slim site footer (markup: _includes/footer.liquid).
+ * Gradient #036 -> #06c; white text is 5.6:1 at the lightest point (#06c).
+ ******************************************************************************/
+
+// Keep the footer at the bottom of the window on short pages: the page is a
+// flex column and the main content area grows to fill the free space.
+html body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+html body > .container[role="main"] {
+  flex: 1 0 auto;
+  margin-bottom: 3rem;
+}
+
+.site-footer {
+  flex-shrink: 0;
+  margin-top: auto;
+  color: #fff;
+  background: linear-gradient(135deg, #036, #06c);
+  font-size: 0.875rem;
+
+  p {
+    margin: 0;
+    color: #fff !important; // gem typography colours every <p>
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+.site-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+// Footer icons: small translucent circles on the gradient.
+.profile-links.profile-links-footer {
+  margin: 0;
+  gap: 0.3rem;
+
+  a {
+    width: 1.85rem;
+    height: 1.85rem;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: none;
+
+    i {
+      color: #fff;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: #fff;
+      box-shadow: none;
+
+      i {
+        color: #036;
+      }
+    }
+
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Back-to-top button (created by vanilla-back-to-top).
+ * The library hides it by moving `bottom`, so only the look changes here.
+ * `:root body` outranks the gem's `:root #back-to-top` size rule.
+ * ------------------------------------------------------------------------ */
+// Solid navy circle with a white up arrow (shaft + head). The library's own
+// chevron SVG is hidden and the arrow is drawn as a background image.
+:root body #back-to-top {
+  width: 48px;
+  height: 48px;
+  right: 24px;
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+  background: #0a3a6b
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 19V5'/%3E%3Cpath d='M5.5 11.5 12 5l6.5 6.5'/%3E%3C/svg%3E")
+    center / 24px 24px no-repeat;
+  box-shadow: 0 4px 14px rgba(10, 58, 107, 0.35);
+  transition:
+    bottom 0.2s,
+    opacity 0.2s,
+    transform 0.15s ease,
+    background-color 0.15s ease,
+    box-shadow 0.15s ease;
+
+  svg {
+    display: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #06c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(10, 58, 107, 0.45);
+  }
+
+  &:focus-visible {
+    outline: 3px solid #8ec5ff;
+    outline-offset: 2px;
+  }
+}
+
+// Keep it clear of the footer bar on phones.
+@media (max-width: 575.98px) {
+  :root body #back-to-top {
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    background-size: 22px 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root body #back-to-top {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-footer-inner {
+    justify-content: center;
+    text-align: center;
+  }
+}

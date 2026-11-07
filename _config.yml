@@ -4,19 +4,18 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Arun
-#middle_name: R.
+#middle_name: Kumar
 last_name: Silivery
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Email is the best way to reach me. I welcome collaboration on intrusion detection, IoT security and deep learning for cybersecurity.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Dr. Arun Kumar Silivery, Assistant Professor of Computer Science & Engineering at Vasavi College of Engineering, Hyderabad. Research in deep learning-based intrusion detection, network attack classification and IoT security.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Arun Kumar Silivery, intrusion detection, network security, cybersecurity, deep learning, IoT security, DDoS detection, Vasavi College of Engineering
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🛡️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://iarunsilivery.github.io # the base hostname & protocol for your site
@@ -96,7 +95,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
@@ -356,8 +355,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Silivery]
+  first_name: [Arun Kumar, Arun, A. K., A.K., A.]
 
   style: apa
   locale: en
@@ -546,7 +545,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Inter:400,500,600,700|JetBrains+Mono:400,500|Roboto:300,400,500,700|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

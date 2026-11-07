@@ -1,0 +1,92 @@
+/*******************************************************************************
+ * Site-specific typography (loaded from the local _sass/_themes.scss override).
+ * Inter (Google Fonts, loaded via third_party_libraries.google_fonts in
+ * _config.yml) for headings and body.
+ *
+ *   body  17px (16px below 768px), line-height 1.6
+ *   h1 40px · h2 28px · h3 21px · h4 18px · h5 17px · h6 15px, weight 600
+ *
+ * Colours come from the CSS variables in _themes.scss, so this works in both
+ * light and dark mode.
+ *
+ * Rules sit in Tailwind's `base` layer so they replace the gem's base element
+ * styles (Roboto 300, 2.5rem h1, ...) while any class-level styling from the
+ * gem still takes precedence, exactly as before.
+ ******************************************************************************/
+
+$font-sans:
+  "Inter",
+  system-ui,
+  -apple-system,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
+$font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+@layer base {
+  body {
+    font-family: $font-sans;
+    font-size: 16px; // mobile
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      font-size: 17px;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-sans;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 17px;
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: $font-mono;
+  }
+}
+
+// Thin teal line under the top navigation. `html` raises specificity above the
+// gem's `.navbar` rule, which is emitted later in main.css.
+html .navbar {
+  border-bottom: 2px solid var(--global-theme-color);
+}
